@@ -98,7 +98,7 @@ docker-compose up -d
 echo -e "${RED}/////////////////////////////////////////////////////////////////////////////${RESET}"
 echo -e "${RED}Chromium Browser Instalasi Telah Selasai${RESET}"
 echo -e "${RED}Akses Unutk Chromium Browser${RESET}"
-echo -e "${RED}${IP_PUBLIC}:12323${RESET}"
+echo -e "${RED}${IP_PUBLIC}:3050 /3000,3051,3001${RESET}"
 echo -e "${RED}Username: egan${RESET}"
 echo -e "${RED}Password: rumiyah123${RESET}"
 echo -e "${RED}/////////////////////////////////////////////////////////////////////////////${RESET}"
