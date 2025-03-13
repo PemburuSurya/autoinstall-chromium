@@ -22,9 +22,9 @@ custom_user="egan"
 password="rumiyah123"
 IP_PUBLIC=$(curl -s ipinfo.io/ip)
 
-# Ask the user to follow on Twitter
+# Skip the follow prompt since the answer is already set
 echo "Please follow us at: https://x.com/cryptoconsol"
-read -p "Have you followed us? (yes/no): " followed
+# read -p "Have you followed us? (yes/no): " followed  # Commented out
 
 if [[ "$followed" != "yes" ]]; then
     echo "Please follow us and run the script again."
