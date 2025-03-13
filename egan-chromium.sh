@@ -20,6 +20,7 @@ install_docker="yes"
 install_compose="yes"
 custom_user="egan"
 password="rumiyah123"
+IP_PUBLIC=$(curl -s ipinfo.io/ip)
 
 # Ask the user to follow on Twitter
 echo "Please follow us at: https://x.com/cryptoconsol"
@@ -93,11 +94,11 @@ EOF
 echo "Starting Chromium container..."
 docker-compose up -d
 
-# Output completion message with separators and blue color
-echo -e "${BLUE}/////////////////////////////////////////////////////////////////////////////${RESET}"
-echo -e "${BLUE}Chromium Browser Instalasi Telah Selasai${RESET}"
-echo -e "${BLUE}Akses Unutk Chromium Browser${RESET}"
-echo -e "${BLUE}(curl -s ipinfo.io/ip):3050 / 3000,3051,3001${RESET}"
-echo -e "${BLUE}Username: ${custom_user}${RESET}"
-echo -e "${BLUE}Password: ${password}${RESET}"
-echo -e "${BLUE}/////////////////////////////////////////////////////////////////////////////${RESET}"
+# Output completion message with separators and red color
+echo -e "${RED}/////////////////////////////////////////////////////////////////////////////${RESET}"
+echo -e "${RED}Chromium Browser Instalasi Telah Selasai${RESET}"
+echo -e "${RED}Akses Unutk Chromium Browser${RESET}"
+echo -e "${RED}${IP_PUBLIC}:12323${RESET}"
+echo -e "${RED}Username: egan${RESET}"
+echo -e "${RED}Password: rumiyah123${RESET}"
+echo -e "${RED}/////////////////////////////////////////////////////////////////////////////${RESET}"
